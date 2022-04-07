@@ -1,0 +1,9 @@
+<div *ngIf="language">
+  <h2>{{language.name | uppercase}} Details</h2>
+  <div>id: {{language.id}}</div>
+  <div>
+    <label for="Language-name">Language name: </label>
+    <input id="Language-name" [(ngModel)]="language.name" placeholder="name">
+  </div>
+</div>
+<button type="button" (click)="goBack()">go back</button>
