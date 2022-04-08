@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Language} from "../language";
 import {LanguageService} from "../language.service";
 
@@ -9,9 +9,9 @@ import {LanguageService} from "../language.service";
 })
 export class LanguagesComponent implements OnInit {
 
-  languages: any = [];
+  languages:Language[] = [];
 
-  constructor(private languageService: LanguageService) {
+  constructor(@Inject(LanguageService)private languageService: LanguageService) {
   }
 
   ngOnInit(): void {
@@ -21,7 +21,7 @@ export class LanguagesComponent implements OnInit {
   getLanguages() {
        this.languageService.getLanguages()
       .subscribe(languages => {
-        this.languages = languages
+        this.languages = languages.skills
       })
   }
 }

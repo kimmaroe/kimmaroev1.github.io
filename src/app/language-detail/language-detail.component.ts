@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {Language} from "../language";
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
@@ -14,9 +14,9 @@ export class LanguageDetailComponent implements OnInit {
   @Input() language?: Language;
 
   constructor(
-    private route: ActivatedRoute,
-    private languageService: LanguageService,
-    private location: Location
+    @Inject(ActivatedRoute)private route: ActivatedRoute,
+    @Inject(LanguageService)private languageService: LanguageService,
+    @Inject(Location)private location: Location
   ) {
   }
 
@@ -25,8 +25,9 @@ export class LanguageDetailComponent implements OnInit {
   }
 
   private getLanguage() {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.languageService.getLanguage(id).subscribe(language => this.language = language);
+    const name = String(this.route.snapshot.paramMap.get('name'));
+    this.languageService.getLanguages()
+      .subscribe(result => this.language = result.skills.find(l => l.name === name));
   }
 
   goBack(): void {

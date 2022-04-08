@@ -1,22 +1,18 @@
-import {Injectable} from '@angular/core';
-import {Language} from "./language";
-import {LANGUAGES} from "./mock-languages";
-import {Observable, of} from "rxjs";
+import {Inject, Injectable} from '@angular/core';
+
+import {HttpClient} from "@angular/common/http";
+import {SkillsAPI} from "./skills-api";
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
-  constructor() {}
+  private url:string = 'https://gitconnected.com/v1/portfolio/kimmaroe';
+  constructor(@Inject(HttpClient)private http: HttpClient) {}
 
-  getLanguages(): Observable<Language[]> {
-
-    let languages =  LANGUAGES;
-    return of(languages);
+  getLanguages() {
+    let languages =  this.http.get<SkillsAPI>(this.url);
+    return languages;
   }
 
-  getLanguage(id: number): Observable<Language> {
-    const language = LANGUAGES.find(l => l.id === id)!;
-    return of(language);
-  }
 }

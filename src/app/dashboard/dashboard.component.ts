@@ -9,7 +9,7 @@ import {parseJson} from "@angular/cli/utilities/json-file";
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  languages: Language[] = [];
+  languages:any;
 
   constructor(private languageService: LanguageService) {
   }
@@ -20,8 +20,8 @@ export class DashboardComponent implements OnInit {
 
   getLanguages(): void {
     this.languageService.getLanguages()
-      .subscribe(languages => {
-        this.languages = languages
+      .subscribe(result => {
+        this.languages = result.skills
       })
 
   }

@@ -6,7 +6,7 @@ import {LanguageDetailComponent} from "./language-detail/language-detail.compone
 
 const routes: Routes = [
   {path: 'languages', component: LanguagesComponent},
-  {path: 'detail/:id', component: LanguageDetailComponent},
+  {path: 'detail/:name', component: LanguageDetailComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 ];

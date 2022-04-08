@@ -1,8 +1,8 @@
 <h2>My languages</h2>
 <ul class="languages">
   <li *ngFor="let language of languages">
-    <a routerLink="/detail/{{language.id}}">
-      <span class="badge">{{language.id}}</span> {{language.name}}
+    <a routerLink="/detail/{{language.name}}">
+      {{language.name}}
     </a>
   </li>
 </ul>
