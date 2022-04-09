@@ -1,0 +1,8 @@
+<ul *ngFor="let project of projects">
+  <li>{{project.displayName}}</li>
+  <ul *ngFor="let image of project.images">
+    <li>
+      <img src="{{ image.resolutions.desktop.url}}" alt="">
+    </li>
+  </ul>
+</ul>

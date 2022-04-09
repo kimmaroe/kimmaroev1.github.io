@@ -1,8 +1,4 @@
-<div *ngIf="language">
-  <h2>{{language.name | uppercase}} Details</h2>
-  <div>
-    <label for="Language-name">Language name: </label>
-    <input id="Language-name" [(ngModel)]="language.name" placeholder="name">
-  </div>
-</div>
-<button type="button" (click)="goBack()">go back</button>
+
+<ng-template [ngIf]="language">
+  <p>{{language.name}} <i class="devicon-{{language.name|lowercase}}-plain"></i></p>
+</ng-template>

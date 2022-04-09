@@ -7,7 +7,8 @@ describe('LanguageService', () => {
   let service: LanguageService;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule]
+      imports: [HttpClientTestingModule],
+      providers: [HttpClientTestingModule]
     });
 
     service = TestBed.inject(LanguageService);

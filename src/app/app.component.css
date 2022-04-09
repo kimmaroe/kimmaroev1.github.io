@@ -1,0 +1,23 @@
+:host{
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
+  grid-template-areas:
+    "left   right"
+    "left   right"
+    "left   right"
+}
+
+.left{
+  grid-area: left;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "footer"
+}
+
+.right{
+  grid-area: right;
+}
+
