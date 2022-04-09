@@ -1,0 +1,7 @@
+:host{
+  display: grid;
+}
+h2{
+  align-self: self-end;
+  justify-self: center;
+}

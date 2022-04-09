@@ -1,0 +1,10 @@
+<h2>Projets</h2>
+  <div class="card-group">
+    <a class="card glass" *ngFor="let preview of projects" href="">
+        <h3 class="card-item-name">{{preview.name | titlecase}}</h3>
+        <div class="card-item" *ngFor="let img of preview.thumbnails| slice:0:3; let i=index" routerLink="/detail">
+          <img src="{{img}}" alt="{{preview.name}}">
+        </div>
+    </a>
+  </div>
+

@@ -1,6 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {WorkExperiencesService} from "../../work-experience/work-experiences.service";
-import {Work} from "../../work-experience/work";
+import {WorkExperiencesService} from "./work-experiences.service";
+import {Work} from "./work";
 
 @Component({
   selector: 'app-work-experiences',

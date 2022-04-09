@@ -1,5 +1,5 @@
-export interface Project {
-  name: string
+export interface Project{
+  name: string,
   description: string,
   url: string,
   highlights: [],
@@ -57,4 +57,5 @@ export interface Project {
       }
     }
   ]
+
 }
