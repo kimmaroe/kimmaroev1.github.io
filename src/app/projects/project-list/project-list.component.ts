@@ -1,15 +1,15 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Project} from "../project";
-import {ProjectsService} from "../projects.service";
+import {ProjectService} from "../project.service";
 
 @Component({
   selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  templateUrl: './project-list.component.html',
+  styleUrls: ['./project-list.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectListComponent implements OnInit {
   projects: Project[] = [];
-  constructor(@Inject(ProjectsService)private projectService: ProjectsService) { }
+  constructor(@Inject(ProjectService)private projectService: ProjectService) { }
 
   ngOnInit(): void {
     this.getProjects();

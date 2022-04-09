@@ -4,21 +4,21 @@ import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {LanguagesComponent} from './languages/languages.component';
+import {LanguageListComponent} from './language/language-list/language-list.component';
 import {FormsModule} from "@angular/forms";
-import {LanguageDetailComponent} from './language-detail/language-detail.component';
+import {LanguageDetailComponent} from './language/language-detail/language-detail.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { WorkExperiencesComponent } from './work-experiences/work-experiences.component';
+import { ProjectListComponent } from './projects/project-list/project-list.component';
+import { WorkExperienceListComponent } from './work-experiences/work-experience-list/work-experience-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LanguagesComponent,
+    LanguageListComponent,
     LanguageDetailComponent,
     DashboardComponent,
-    ProjectsComponent,
-    WorkExperiencesComponent
+    ProjectListComponent,
+    WorkExperienceListComponent
   ],
   imports: [
     BrowserModule,

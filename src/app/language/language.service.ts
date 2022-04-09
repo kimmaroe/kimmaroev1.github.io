@@ -1,7 +1,7 @@
 import {Inject, Injectable} from '@angular/core';
 
 import {HttpClient} from "@angular/common/http";
-import {SkillsAPI} from "./skills-api";
+import {LanguagesApi} from "./languages-api";
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class LanguageService {
   constructor(@Inject(HttpClient)private http: HttpClient) {}
 
   getLanguages() {
-    let languages =  this.http.get<SkillsAPI>(this.url);
+    let languages =  this.http.get<LanguagesApi>(this.url);
     return languages;
   }
 

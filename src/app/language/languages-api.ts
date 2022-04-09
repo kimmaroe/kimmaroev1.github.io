@@ -1,4 +1,4 @@
-export class SkillsAPI {
+export class LanguagesApi {
   skills!: [
     {
       name: string;

@@ -5,7 +5,7 @@ import {ProjectsAPI} from "./projects-api";
 @Injectable({
   providedIn: 'root'
 })
-export class ProjectsService {
+export class ProjectService {
 
   private url:string = 'https://gitconnected.com/v1/portfolio/kimmaroe';
   constructor(@Inject(HttpClient)private http: HttpClient) {}

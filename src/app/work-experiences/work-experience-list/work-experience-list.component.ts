@@ -1,13 +1,13 @@
 import {Component, Inject, OnInit} from '@angular/core';
-import {WorkExperiencesService} from "../work-experiences.service";
-import {Work} from "../work";
+import {WorkExperiencesService} from "../../work-experience/work-experiences.service";
+import {Work} from "../../work-experience/work";
 
 @Component({
   selector: 'app-work-experiences',
-  templateUrl: './work-experiences.component.html',
-  styleUrls: ['./work-experiences.component.css']
+  templateUrl: './work-experience-list.component.html',
+  styleUrls: ['./work-experience-list.component.css']
 })
-export class WorkExperiencesComponent implements OnInit {
+export class WorkExperienceListComponent implements OnInit {
   workExperiences:Work[]=[];
 
   constructor(@Inject(WorkExperiencesService)private workExperiencesService: WorkExperiencesService) { }

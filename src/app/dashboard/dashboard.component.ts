@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Language} from '../language';
-import {LanguageService} from '../language.service';
+import {Language} from '../language/language';
+import {LanguageService} from '../language/language.service';
 import {parseJson} from "@angular/cli/utilities/json-file";
 
 @Component({

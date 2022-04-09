@@ -3,11 +3,11 @@ import {Language} from "../language";
 import {LanguageService} from "../language.service";
 
 @Component({
-  selector: 'app-languages',
-  templateUrl: './languages.component.html',
-  styleUrls: ['./languages.component.css']
+  selector: 'app-language-list',
+  templateUrl: './language-list.component.html',
+  styleUrls: ['./language-list.component.css']
 })
-export class LanguagesComponent implements OnInit {
+export class LanguageListComponent implements OnInit {
 
   languages:Language[] = [];
 
