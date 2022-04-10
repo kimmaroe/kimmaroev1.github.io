@@ -78,7 +78,7 @@ img{
 }
 
 .card img:hover{
-  box-shadow: 3px 3px 15px -3px #000000;
+  box-shadow: 3px 3px 15px -3px rgba(0, 0, 0, 0.2);
   transform: translateY(-20px);
 
 }

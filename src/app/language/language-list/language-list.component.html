@@ -1,6 +1,6 @@
-    <ng-template *ngFor="let language of languages|slice:0:5;let i=index" [ngIf]="language">
-      <div class="position-absolute language glass-bold item-{{i}}">
-        <i class="devicon-{{language.name|lowercase}}-plain colored"></i>
+    <ng-template *ngFor="let language of languages|slice:0:7;let i=index" [ngIf]="language">
+      <div class="position-absolute language glass-bold {{language.keywords.slice(0,1)}} item-{{i}}">
+        <i [ngClass]="{'devicon-angularjs-plain ' : language.name == 'angular'}" class="devicon-{{language.name|lowercase}}-plain colored"></i>
       </div>
     </ng-template>
 

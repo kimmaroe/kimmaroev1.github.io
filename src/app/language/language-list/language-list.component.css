@@ -10,40 +10,54 @@
   width:3rem;
   height: 3rem;
 }
-.item-0{
-  top: 20vh;
-  left: 10vw;
+
+.love{
+  font-size: 2.5rem;
+  width:4rem;
+  height: 4rem;
+}
+.item-5{
+  top: 29vh;
+  left: 27vw;
   transform: translateY(-5%);
   animation: floating 2.5s infinite;
   transition: ease 1s;
 }
 
-.item-1{
+.item-4{
   bottom: 10vh;
-  left: 10vw;
+  left: 31vw;
   transform: translateY(-5%);
   animation: floating 2.1s infinite;
   transition: ease 1s;
 }
 
-.item-2{
-  top: 10vh;
-  left: 30vw;
+.item-3{
+  top: 5vh;
+  left: 33vw;
   transform: translateY(-5%);
   animation: floating 2.2s infinite;
   transition: ease 1s;
 }
-.item-3{
+.item-2{
   top: 50vh;
   right: 10vw;
   transform: translateY(-5%);
-  animation: floating 1s infinite;
+  animation: floating 2.5s infinite;
   transition: ease 1s;
 }
-.item-4{
+.item-1{
   bottom: 10vh;
   right: 5vw;
   transform: translateY(-5%);
   animation: floating 2.7s infinite;
   transition: ease 1s;
 }
+.item-0{
+  top: 5vh;
+  right: 15vw;
+  transform: translateY(-5%);
+  animation: floating 2.7s infinite;
+  transition: ease 1s;
+}
+
