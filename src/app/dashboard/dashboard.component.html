@@ -1,29 +1,3 @@
-<div class="first">
-  <h2>Languages et technologies</h2>
-  <a routerLink="/languages" class="languages-menu">
-    <div *ngFor="let language of languages">
-      <app-language-detail [language]="language"></app-language-detail>
-    </div>
-  </a>
-</div>
-<div class="second">
-  <h2>Work</h2>
-  <div class="languages-menu">
-    <app-work-experiences></app-work-experiences>
-  </div>
-</div>
-<div class="third">
-  <h2>Projects</h2>
-  <div class="languages-menu">
-   <app-projects></app-projects>
-  </div>
-</div>
-<div class="fourth">
-  <h2>Languages et technologies</h2>
-  <div class="languages-menu">
-    <div *ngFor="let language of languages" routerLink="/detail/{{ language.name }}">
-      <app-language-detail [language]="language"></app-language-detail>
-    </div>
-  </div>
-</div>
-
+<app-project-preview></app-project-preview>
+<app-work-experiences></app-work-experiences>
+<app-language-list></app-language-list>

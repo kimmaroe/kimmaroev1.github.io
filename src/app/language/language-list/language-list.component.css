@@ -1,14 +1,49 @@
-/* languagesComponent's private CSS styles */
-.languages {
-  list-style-type: none;
+.position-absolute{
+  position: fixed;
+}
+.language{
   display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  width:3rem;
+  height: 3rem;
+}
+.item-0{
+  top: 20vh;
+  left: 10vw;
+  transform: translateY(-5%);
+  animation: floating 2.5s infinite;
+  transition: ease 1s;
 }
 
-.languages li {
-  position: relative;
-  cursor: pointer;
+.item-1{
+  bottom: 10vh;
+  left: 10vw;
+  transform: translateY(-5%);
+  animation: floating 2.1s infinite;
+  transition: ease 1s;
 }
 
-.languages li:hover {
-  left: .1em;
+.item-2{
+  top: 10vh;
+  left: 30vw;
+  transform: translateY(-5%);
+  animation: floating 2.2s infinite;
+  transition: ease 1s;
+}
+.item-3{
+  top: 50vh;
+  right: 10vw;
+  transform: translateY(-5%);
+  animation: floating 1s infinite;
+  transition: ease 1s;
+}
+.item-4{
+  bottom: 10vh;
+  right: 5vw;
+  transform: translateY(-5%);
+  animation: floating 2.7s infinite;
+  transition: ease 1s;
 }

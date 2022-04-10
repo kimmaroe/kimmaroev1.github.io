@@ -1,23 +1,19 @@
 :host{
   display: grid;
-  justify-content: center;
-  min-height: 100vh;
-  grid-template-areas:
-    "left   right"
-    "left   right"
-    "left   right"
-}
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 
+}
 .left{
-  grid-area: left;
   display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "footer"
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  justify-self: center;
 }
 
-.right{
-  grid-area: right;
-}
+
+
 

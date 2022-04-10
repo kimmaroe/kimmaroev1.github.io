@@ -1,6 +1,6 @@
-<h2>Technologies</h2>
-<ul class="languages">
-  <li *ngFor="let language of languages">
-    <app-language-detail [language]="language"></app-language-detail>
-  </li>
-</ul>
+    <ng-template *ngFor="let language of languages|slice:0:5;let i=index" [ngIf]="language">
+      <div class="position-absolute language glass-bold item-{{i}}">
+        <i class="devicon-{{language.name|lowercase}}-plain colored"></i>
+      </div>
+    </ng-template>
+

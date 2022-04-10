@@ -1,42 +1,16 @@
 /* DashboardComponent's private CSS styles */
 :host{
   display: grid;
-  grid-template-areas:
-  "first second"
-  "third fourth"
-;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-rows: fit-content(100%);
+  justify-self: left;
+  width: 80%;
 }
-.languages-menu {
+.section{
   display: grid;
-  grid-template-areas:
-  "first second third"
-;
 }
-
-span {
-  padding: 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: inline-block;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  min-width: 70px;
-  margin: .5rem auto;
-  box-sizing: border-box;
-
-  /* flexbox */
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
+h2{
+  justify-self: center;
+  align-self: self-end;
 }
-i{
-  color: #fff;
-}
-@media (min-width: 600px) {
-  span {
-    width: 18%;
-    box-sizing: content-box;
-  }
-}
-
