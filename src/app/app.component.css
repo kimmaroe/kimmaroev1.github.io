@@ -1,17 +1,26 @@
-:host{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-}
 .left{
   display: grid;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  justify-self: center;
+}
+:host{
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  :host{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .left{
+    display: grid;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    justify-self: center;
+  }
 }
 
 

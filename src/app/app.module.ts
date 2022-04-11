@@ -10,6 +10,8 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { WorkExperienceListComponent } from './work-experience/work-experience-list/work-experience-list.component';
 import { ProjectPreviewComponent } from './projects/project-preview/project-preview.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DragDropModule} from "@angular/cdk/drag-drop";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProjectPreviewComponent } from './projects/project-preview/project-prev
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

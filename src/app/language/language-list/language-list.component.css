@@ -19,45 +19,47 @@
 .item-5{
   top: 29vh;
   left: 27vw;
+}
+
+.float-slow{
+  transform: translateY(-5%);
+  animation: floating 5s infinite;
+  transition: ease 0.5s;
+}
+.float-normal{
+  transform: translateY(-5%);
+  animation: floating 3.5s infinite;
+  transition: ease 0.5s;
+}
+.float-fast{
   transform: translateY(-5%);
   animation: floating 2.5s infinite;
-  transition: ease 1s;
+  transition: ease 0.5s;
+}
+
+.language:hover, .language:focus{
+  animation-play-state: paused;
 }
 
 .item-4{
   bottom: 10vh;
-  left: 31vw;
-  transform: translateY(-5%);
-  animation: floating 2.1s infinite;
-  transition: ease 1s;
+  left: 28vw;
 }
 
 .item-3{
   top: 5vh;
   left: 33vw;
-  transform: translateY(-5%);
-  animation: floating 2.2s infinite;
-  transition: ease 1s;
 }
 .item-2{
   top: 50vh;
   right: 10vw;
-  transform: translateY(-5%);
-  animation: floating 2.5s infinite;
-  transition: ease 1s;
 }
 .item-1{
   bottom: 10vh;
   right: 5vw;
-  transform: translateY(-5%);
-  animation: floating 2.7s infinite;
-  transition: ease 1s;
 }
 .item-0{
   top: 5vh;
   right: 15vw;
-  transform: translateY(-5%);
-  animation: floating 2.7s infinite;
-  transition: ease 1s;
 }
 
