@@ -10,7 +10,7 @@ import {Project} from "../project";
 })
 export class ProjectPreviewComponent implements OnInit {
 
-  projects: ProjectPreview[] = [];
+  projects: Project[] = [];
   constructor(@Inject(ProjectService)private projectService: ProjectService) { }
 
   ngOnInit(): void {
@@ -19,12 +19,8 @@ export class ProjectPreviewComponent implements OnInit {
 
   private getProjectsPreviews() {
     this.projectService.getProjects().subscribe(result => {
-      result.projects.forEach(
-        project => {
-          this.projects.push(new ProjectPreview(project))
+          this.projects = result.projects
         }
       )
-    })
   }
-
 }
