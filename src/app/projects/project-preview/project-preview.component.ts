@@ -19,7 +19,6 @@ export class ProjectPreviewComponent implements OnInit {
 
   private getProjectsPreviews() {
     this.projectService.getProjects().subscribe(result => {
-      console.log(result)
       result.projects.forEach(
         project => {
           this.projects.push(new ProjectPreview(project))

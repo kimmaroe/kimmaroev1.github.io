@@ -54,7 +54,6 @@ export class LanguageListComponent implements OnInit {
        this.languageService.getLanguages()
       .subscribe(languages => {
         this.languages = languages.skills
-        console.log(this.languages)
       })
   }
 }

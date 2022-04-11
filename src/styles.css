@@ -4,7 +4,7 @@
 }
 
 html {
-  background-image: url(assets/desert-ge83bebbd0_1920.jpg);
+  background:linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7)), url(assets/desert-ge83bebbd0_1920.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -51,8 +51,8 @@ img{
   display: none;
 }
 .glass{
-  background: rgba(248, 222, 199, 0.3);
-  box-shadow: 0 8px 10px 0 rgba(159, 121, 87, 0.3);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 5px 3px -5px rgba(101, 98, 98, 0.83);
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -108,6 +108,12 @@ img{
   }
   .card-item-1, .card-item-2{
     display: block;
+  }
+  .glass{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 10px 0 rgba(159, 121, 87, 0.3);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 /*
