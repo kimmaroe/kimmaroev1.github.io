@@ -1,6 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {ProjectService} from "../project.service";
-import {ProjectPreview} from "../project-preview";
 import {Project} from "../project";
 
 @Component({

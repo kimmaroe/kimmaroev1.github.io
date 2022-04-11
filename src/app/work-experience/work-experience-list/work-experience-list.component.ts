@@ -19,7 +19,6 @@ export class WorkExperienceListComponent implements OnInit {
   private getWorkExperiences() {
     this.workExperiencesService.getWorkExperiences().subscribe(result => {
       this.workExperiences = result.work
-      console.log(this.workExperiences)
     })
   }
 }
